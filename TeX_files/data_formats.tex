@@ -1,1 +1,20 @@
 \chapter{Data Formats}
+
+\section{Byte Ordering}
+
+\textbf{Endianness} is the order in which bytes of data are stored in memory.
+
+\textbf{Little endian} ordering indicates that the least significant byte is stored first. Processor architectures mostly use little endian in the modern day. Intel and AMD processors, for example, have historically been little endian.
+
+\textbf{Big endian} ordering indicates that the most significant byte is stored first. Big endian is common in networking protocol, hence the nickname "network order".
+
+Some machines can switch between endian modes, called \textbf{bi-endian} or {mixed-endian} machines. This can improve performance and simplify networking logic. (For example: Intel i860, PA-RISC, ARM v3+).
+
+An arbitrary file format might use either ordering. The JPEG format, for example, uses big endian.
+
+
+
+\section{References}
+
+https://developer.mozilla.org/en-US/docs/Glossary/Endianness
+
