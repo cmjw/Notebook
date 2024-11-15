@@ -1,1 +1,29 @@
 \chapter{Processor Architecture}
+
+\section{Instruction Set Architecture (ISA)}
+
+The Instruction Set Architecture (ISA) defines the behavior and format of a machine-level program. The ISA defines the processor state, instruction format, and effects an instruction has on the processor state. 
+
+Common architectures include:
+\begin{itemize}
+	\item IA32: Intel Architecture (32-bit)
+	\item x86: 64-bit extension to IA32 (x86\_64)
+	\item AMD
+\end{itemize}
+
+\subsection{Reduced Instruction Set Computer (RISC)}
+
+\textbf{RISC} architectures have fewer, simpler instructions, each of which performs a single operation. These architectures are usually less complex, perform well using pipelining, and require less silicon at a hardware level. This approach saves power and cost. RISC processors are often used in embedded systems.
+
+\subsection{Complex Instruction Set Computer (CISC)}
+
+\textbf{CISC} architectures have a larger set of instructions which are more complex, and may perform multiple internal operations. These architectures can typically complete a task with fewer instructions, at the cost of complexity at the hardware level. This results in higher potential performance.
+
+\section{References}
+
+\begin{itemize}
+	\item https://www.sciencedirect.com/book/9780128007266/power-and-performance
+	\item https://imada.sdu.dk/u/kslarsen/dm546/Material/IntelnATT.htm
+	\item https://www.cs.umd.edu/meesh/411/CA-online/chapter/instructionset-
+	architecture/index.html
+\end{itemize}
