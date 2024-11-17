@@ -61,9 +61,24 @@ Associative, demorgan, blah blah
 
 \section{Latches}
 
-\subsection{SR Latch}
+\subsection{S-R Latch}
 
-An SR (Set-Reset) Latch has two inputs, S and R (Set and Reset). The S input sets the output to 1, and the R input resets the output to 0. An SR latch's output behavior is undefined when both the S and R inputs are at 1.
+\begin{figure}[h!]
+	\includegraphics[scale=0.35]{./img/sr-latch.png}
+\end{figure}
+
+An S-R (Set-Reset) Latch has two inputs, S and R (Set and Reset). The S input sets the output to 1, and the R input resets the output to 0. An SR latch's output behavior is undefined when both the S and R inputs are at 1. \\
+
+\begin{tabular}{c c c c}
+	\hline
+	\textbf{S} & \textbf{R} & \textbf{Q} & \textbf{¬Q} \\ 
+	\hline
+	0 & 0 & Latch & Latch\\
+	0 & 1 & 0 & 1\\
+	1 & 0 & 1 & 0 \\
+	1 & 1 & 0 & 0 \\
+	\hline 
+\end{tabular} \\
 
 \subsection{Gated SR Latch}
 
