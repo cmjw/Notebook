@@ -32,7 +32,7 @@ The original description of a von Neumann architecture defines a computer as hav
 	\includegraphics[scale=0.5]{./img/von-Neumann.png}
 \end{figure}
 
-A von Neumann architecture generally describes a stored-program computer with a shared memory for data and instructions.
+A von Neumann architecture generally describes a stored-program computer with a shared memory for data and instructions. Instructions are executed sequentially. The computer fetches one instruction at a time from memory and sends it to the CPU.
 
 \subsection{Von Neumann Bottleneck}
 
@@ -44,7 +44,11 @@ In the von Neumann architecture, there is no distinction between data and instru
 
 \section{Harvard Architecture}
 
-The Harvard architecture is a variant of the von Neumann architecture that attempts to address its limitations. It has separate memories for data and instructions, and separate connections between each and the central control.
+The \textbf{Harvard architecture} is a variant of the von Neumann architecture that attempts to address its limitations. It has separate memories for data and instructions, and separate connections between each and the central control.
+
+This means that the instruction memory can be implemented in ROM, and have a different word length than the data memory, since the two memories utilize different buses that may be of different widths.
+
+Applications that commonly use the Harvard architecture include DSP (digital signal processing) applications and microprocessors.
 
 \section{References}
 
