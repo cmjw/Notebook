@@ -40,15 +40,29 @@ The \textbf{von Neumann bottleneck} is the reduction in throughput caused by the
 
 \subsection{Self-Modifying Code}
 
-In the von Neumann architecture, there is no distinction between data and instruction data. 
+In the von Neumann architecture, there is no distinction between data and instruction data. This may be a disadvantage in some cases, such as security concerns.
+
+For some applications, however, it is an advantage of the von Neumann architecture that data and instructions are stored together, since data could be interpreted and executed as instructions.
 
 \section{Harvard Architecture}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.5]{./img/Harvard-architecture.png}
+\end{figure}
 
 The \textbf{Harvard architecture} is a variant of the von Neumann architecture that attempts to address its limitations. It has separate memories for data and instructions, and separate connections between each and the central control.
 
 This means that the instruction memory can be implemented in ROM, and have a different word length than the data memory, since the two memories utilize different buses that may be of different widths.
 
-Applications that commonly use the Harvard architecture include DSP (digital signal processing) applications and microprocessors.
+Applications that commonly use the Harvard architecture include DSPs (digital signal processors) and microprocessors.
+
+\section{Modified Harvard Architecture}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.5]{./img/modified-Harvard.png}
+\end{figure}
+
+https://www.youtube.com/watch?v=4nY7mNHLrLk
 
 \section{References}
 
